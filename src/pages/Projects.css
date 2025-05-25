@@ -1,0 +1,201 @@
+.projects-container {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+.projects-title {
+  font-size: 2.6rem;
+  color: #00e6e6;
+  text-align: center;
+  margin-bottom: 3rem;
+  text-shadow: 0 2px 10px rgba(0, 255, 255, 0.15);
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 1.8rem;
+  width: 300px;
+  min-height: 200px;
+  box-shadow: 0 6px 20px rgba(0, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+}
+
+.project-card h3 {
+  color: #00d2ff;
+  margin-bottom: 0.6rem;
+  font-size: 1.3rem;
+}
+
+.project-card p {
+  color: #cccccc;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Modal */
+.project-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  padding: 1rem;
+}
+
+.modal-content {
+  position: relative;
+  background: #1a1a1a;
+  color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 40px rgba(0, 255, 255, 0.2);
+}
+
+.modal-content h3 {
+  color: #00ffff;
+  font-size: 1.7rem;
+  margin-bottom: 1.2rem;
+}
+
+.modal-content ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.modal-content li {
+  margin-bottom: 0.8rem;
+  font-size: 1.05rem;
+  color: #e0f7fa;
+}
+
+/* Görsel Galeri */
+.modal-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.modal-gallery img {
+  width: 320px;
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+  
+  max-height: 50vh;
+  width: auto;
+  object-fit: contain;
+  border-radius: 10px;
+
+
+}
+
+.nav-button {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #00e6e6;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.nav-button:hover {
+  transform: scale(1.2);
+}
+
+.nav-button.left {
+  position: absolute;
+  left: -2rem;
+}
+
+.nav-button.right {
+  position: absolute;
+  right: -2rem;
+}
+
+/* Kapat Butonu */
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.4rem;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.close-button:hover {
+  color: #00e6e6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%;
+  }
+
+  .modal-gallery img {
+    width: 100%;
+  }
+
+  .nav-button.left, .nav-button.right {
+    display: none;
+  }
+}
+.fullscreen-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fullscreen-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.fullscreen-content img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.fullscreen-content .close-button {
+  position: absolute;
+  top: -40px;
+  right: -10px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}

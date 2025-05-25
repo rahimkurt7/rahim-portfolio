@@ -1,0 +1,494 @@
+/* Genel yapı */
+.home-container {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6fc;
+  color: #1f1f1f;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/* Animasyonlar */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeInUp 0.7s ease both;
+}
+
+/* Giriş Bölümü */
+.intro-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #0c3b45, #025f6b); /* NAVBAR ile uyumlu hale getirildi */
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.intro-left {
+  flex: 1;
+  min-width: 300px;
+  z-index: 1;
+}
+
+.intro-left h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.intro-left .highlighted {
+  color: #00eaff;
+}
+
+.intro-left p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 600px;
+  color: #dcdcdc;
+}
+
+.intro-right {
+  flex: 1;
+  text-align: center;
+  z-index: 1;
+}
+
+.intro-right img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease, box-shadow 0.4s ease;
+}
+
+.intro-right img:hover {
+  transform: scale(1.06) rotate(1deg);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* Gelişim Yolculuğu */
+.journey-section {
+  background: linear-gradient(to bottom, #ffffff, #f0f4f8);
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.journey-section h2 {
+  font-size: 2.7rem;
+  color: #1a1a40;
+  margin-bottom: 0.8rem;
+}
+
+.journey-section p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 360px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  transition: transform 0.4s ease;
+}
+
+.card img:hover {
+  transform: scale(1.08);
+}
+
+.card h3 {
+  color: #005fbf;
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  max-height: 120px;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.card.expanded p {
+  max-height: 1000px;
+}
+
+.read-more-btn {
+  margin-top: 1rem;
+  background: none;
+  color: #005fbf;
+  border: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.read-more-btn:hover {
+  text-decoration: underline;
+}
+
+/* Kariyer Hedefleri */
+.career-section {
+  background: #eef1f7;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.career-section h2 {
+  font-size: 2.6rem;
+  color: #1a1a40;
+  margin-bottom: 1rem;
+}
+
+.career-section p {
+  max-width: 850px;
+  margin: 0 auto;
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: #333;
+}
+
+/* Teknolojiler */
+.skills-section {
+  padding: 5rem 2rem;
+  text-align: center;
+  background: #f0f7ff;
+}
+
+.skills-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #002244;
+  margin-bottom: 2.5rem;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.skill {
+  background: linear-gradient(135deg, #cde9ff, #a8d8ff);
+  padding: 0.9rem 1.8rem;
+  border-radius: 14px;
+  font-weight: 600;
+  color: #003355;
+  font-size: 1.05rem;
+  box-shadow: 0 4px 14px rgba(0, 98, 160, 0.15);
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #98dbff, #6ac9ff);
+  box-shadow: 0 6px 20px rgba(0, 100, 180, 0.25);
+  color: #001e33;
+}
+.skill.html { background: #ffe0cc; color: #d35400; }
+.skill.css { background: #e0f7fa; color: #006064; }
+.skill.javascript { background: #fff3b0; color: #f39c12; }
+.skill.react { background: #e0f2ff; color: #1976d2; }
+.skill.react-native { background: #ddeeff; color: #3f51b5; }
+.skill.flutter { background: #e3f2fd; color: #0288d1; }
+
+.skill.node { background: #d0f8ce; color: #2e7d32; }
+.skill.dotnet { background: #ede7f6; color: #673ab7; }
+.skill.csharp { background: #f3e5f5; color: #8e24aa; }
+.skill.express { background: #f5f5f5; color: #424242; }
+
+.skill.firebase { background: #fff8e1; color: #f57f17; }
+.skill.postgres { background: #e3f2fd; color: #1565c0; }
+.skill.mssql { background: #ede7f6; color: #512da8; }
+.skill.sql { background: #f1f8e9; color: #33691e; }
+
+.skill.python { background: #e0f7fa; color: #0277bd; }
+.skill.pandas { background: #fce4ec; color: #c2185b; }
+.skill.numpy { background: #e8f5e9; color: #2e7d32; }
+
+.skill.git { background: #ffebee; color: #d32f2f; }
+.skill.github { background: #f5f5f5; color: #24292e; }
+.skill.jira { background: #e1f5fe; color: #0288d1; }
+.skill.vscode { background: #e3f2fd; color: #0d47a1; }
+
+.skill.cicd { background: #fffde7; color: #f9a825; }
+.skill.vercel { background: #f3f4f6; color: #000; }
+.skill.netlify { background: #e0f7fa; color: #00bfa5; }
+
+
+/* İletişim */
+.contact-section {
+  padding: 5rem 2rem;
+  background: #ffffff;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #1a1a40;
+}
+
+.contact-section form {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #f9fbfc;
+  padding: 2.5rem;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 1rem 1.2rem;
+  font-size: 1rem;
+  border: 1px solid #ccd9e1;
+  border-radius: 12px;
+  transition: border-color 0.3s ease;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+  outline: none;
+  border-color: #00aaff;
+}
+
+.contact-section form input[type=\"email\"] {
+  grid-column: span 2;
+}
+
+.contact-section form textarea {
+  grid-column: span 2;
+  height: 140px;
+  resize: vertical;
+}
+
+.contact-section button {
+  padding: 0.9rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  background-color: #1a1a40;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  grid-column: span 2;
+  width: 150px;
+  justify-self: start;
+}
+
+.contact-section button:hover {
+  background-color: #2c2c63;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .intro-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-right {
+    margin-top: 2rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-section form {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-section button {
+    width: 100%;
+    justify-self: stretch;
+  }
+}
+.footer {
+  width: 100%;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #eee;
+  padding: 2.5rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.95rem;
+  position: relative;
+  bottom: 0;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-socials a {
+  color: #ccc;
+  font-size: 1.6rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #00e6e6;
+  transform: scale(1.2);
+}
+
+.footer-contact {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.footer-contact a {
+  color: #00e6e6;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .footer-socials {
+    gap: 1.2rem;
+  }
+
+  .footer-contact {
+    font-size: 0.95rem;
+  }
+
+  .footer-copy {
+    font-size: 0.8rem;
+  }
+}
+
+.experience-section {
+  background: #f0f4f9;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.experience-section h2 {
+  font-size: 2.7rem;
+  color: #1a1a40;
+  margin-bottom: 2.8rem;
+  font-weight: 800;
+}
+
+.experience-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.experience-box {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 18px;
+  width: 340px;
+  text-align: left;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.experience-box:hover {
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.experience-box h3 {
+  color: #0056b3;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+  max-width: 220px;
+}
+
+.experience-date {
+  font-size: 0.95rem;
+  color: #666;
+  white-space: nowrap;
+}
+
+.experience-box p {
+  color: #444;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.experience-box strong {
+  color: #000;
+}

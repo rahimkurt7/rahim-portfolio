@@ -1,0 +1,167 @@
+/* Genel yapı */
+.contact-container {
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #00f0ff;
+}
+
+.contact-subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #ffffff15;
+  color: white;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #cccccc;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background: #ffffff25;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.contact-form button {
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: #00e6e6;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #00bfbf;
+}
+
+.thank-you {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 2rem 1rem;
+  color: #00ffd0;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.contact-icons a {
+  color: #ffffffcc;
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+  color: #00ffe6;
+}
+
+.footer {
+  background: #111;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-top: auto;
+}
+
+.footer .footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer .footer-socials a {
+  color: #ccc;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.footer .footer-socials a:hover {
+  color: #00e6e6;
+}
+
+.footer .footer-contact {
+  font-weight: bold;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  .contact-title {
+    font-size: 2.2rem;
+  }
+
+  .contact-subtitle {
+    font-size: 1rem;
+  }
+
+  .contact-icons {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    font-size: 0.85rem;
+  }
+}
