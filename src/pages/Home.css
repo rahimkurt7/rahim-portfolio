@@ -496,7 +496,23 @@ section {
   .intro-left h1 {
     font-size: 2rem;
   }
+.intro-left p {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+    word-break: break-word;
+    max-width: 100%;
+  }
 
+  .intro-left h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  .intro-left {
+    text-align: center;
+  }
+}
   .intro-left p {
     font-size: 1rem;
     line-height: 1.6;
