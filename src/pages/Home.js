@@ -56,7 +56,7 @@ function Home() {
   <div className="experience-items">
     {[
       {
-        title: "İzmir Bakırçay Üniversitesi – Kısa Dönem Staj",
+        title: "İzmir Bakırçay Üniversitesi",
         date: "Haziran 2023 – Temmuz 2023",
         content: (
           <>
@@ -67,7 +67,7 @@ function Home() {
         )
       },
       {
-        title: "BilgiYön Yazılım – Uzun Dönem Staj",
+        title: "BilgiYön Yazılım ",
         date: "Şubat 2024 – Mayıs 2025",
         content: (
           <>

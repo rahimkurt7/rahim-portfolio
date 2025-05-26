@@ -4,11 +4,7 @@ import './About.css';
 
 function About() {
   return (
-    <motion.div 
-      className="about-container" 
-      initial={{ opacity: 0 }} 
-      animate={{ opacity: 1 }} 
-      transition={{ duration: 0.6 }}>
+    <div className="about-container">
 
       <motion.h1 
         className="about-title" 
@@ -39,7 +35,9 @@ function About() {
         <p>
           <span className="emoji">💡</span> <strong>Problem çözme, yaratıcılık ve iletişim</strong> konularındaki güçlü yönlerim sayesinde ekip içi uyum sağlar ve her projeye değer katmayı hedeflerim. Yazılım dünyasında sürdürülebilir bir kariyer inşa ederek, yenilikçi ve anlamlı çözümler üretmeyi amaçlıyorum.
         </p>
-        <footer className="footer">
+      </motion.div>
+
+      <footer className="footer">
         <div className="footer-socials">
           <a href="https://linkedin.com/in/rahimkurt" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <i className="fab fa-linkedin"></i>
@@ -58,13 +56,12 @@ function About() {
         <div className="footer-contact">
           <a href="mailto:rahimkurt.7@gmail.com">rahimkurt.7@gmail.com</a> — <strong>Rahim Kurt</strong>
         </div>
+
+        <div className="footer-copy">© 2025 Tüm Hakları Saklıdır</div>
       </footer>
-      </motion.div>
-      
-    </motion.div>
-    
+
+    </div>
   );
-  
 }
-  
+
 export default About;

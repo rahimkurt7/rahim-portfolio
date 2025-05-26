@@ -72,9 +72,9 @@ function Contact() {
 
       <footer className="footer">
         <div className="footer-socials">
-          <a href="https://linkedin.com/in/rahimkurt" target="_blank"><i className="fab fa-linkedin"></i></a>
+          <a href="https://www.linkedin.com/in/rahim-kurt-977a41222/" target="_blank"><i className="fab fa-linkedin"></i></a>
           <a href="https://github.com/rahimkurt7" target="_blank"><i className="fab fa-github"></i></a>
-          <a href="https://instagram.com/rahimkurt" target="_blank"><i className="fab fa-instagram"></i></a>
+          <a href="https://instagram.com/rahimkurt.7" target="_blank"><i className="fab fa-instagram"></i></a>
           <a href="https://wa.me/905538655052" target="_blank"><i className="fab fa-whatsapp"></i></a>
         </div>
         <div className="footer-contact">rahimkurt.7@gmail.com — Rahim Kurt</div>
