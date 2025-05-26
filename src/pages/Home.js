@@ -176,12 +176,8 @@ function Home() {
           ))}
         </motion.div>
       </section>
-      
 
-    </div>
-    
-  );
-  <footer className="footer">
+<footer className="footer">
   <div className="footer-socials">
     <a href="https://linkedin.com/in/rahimkurt" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
       <i className="fab fa-linkedin"></i>
@@ -203,6 +199,10 @@ function Home() {
 
   <div className="footer-copy">© 2025 Tüm Hakları Saklıdır</div>
 </footer>
+
+</div>
+    
+  );
 }
 
 export default Home;

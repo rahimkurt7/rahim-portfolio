@@ -6,6 +6,10 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
 }
 
 /* Animasyonlar */
@@ -331,7 +335,11 @@ section {
 }
 
 /* Responsive */
-
+@media (max-width: 768px) {
+  .intro-section {
+    flex-direction: column;
+    text-align: center;
+  }
 
   .intro-right {
     margin-top: 2rem;
@@ -355,7 +363,7 @@ section {
     width: 100%;
     justify-self: stretch;
   }
-
+}
 .footer {
   width: 100%;
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
@@ -408,7 +416,10 @@ section {
   color: #ccc;
 }
 
-
+@media (max-width: 768px) {
+  .footer-socials {
+    gap: 1.2rem;
+  }
 
   .footer-contact {
     font-size: 0.95rem;
@@ -417,7 +428,7 @@ section {
   .footer-copy {
     font-size: 0.8rem;
   }
-
+}
 
 .experience-section {
   background: #f0f4f9;
@@ -486,13 +497,23 @@ section {
   color: #000;
 }
 
-@media (max-width: 768px) {
-.intro-section {
-    flex-direction: column;
-    text-align: center;
-  
+/* === Responsive Layout Fixes for Footer === */
 
-  .footer-socials {
-    gap: 1.2rem;
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-}}
+
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin-top: auto;
+  margin-top: auto;
+  width: 100%;
+  overflow-x: hidden;
+}
