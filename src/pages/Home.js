@@ -67,7 +67,7 @@ function Home() {
         )
       },
       {
-        title: "BilgiYön Yazılım ",
+        title: "BilgiYön Yazılım",
         date: "Şubat 2024 – Mayıs 2025",
         content: (
           <>
@@ -97,13 +97,14 @@ function Home() {
       >
         <div className="experience-header">
           <h3>{exp.title}</h3>
-          <span className="experience-date">{exp.date}</span>
+          <div className="experience-date">{exp.date}</div>
         </div>
         <p>{exp.content}</p>
       </motion.div>
     ))}
   </div>
 </motion.section>
+
 
       {/* 2. Gelişim Yolculuğum */}
 <section className="journey-section">

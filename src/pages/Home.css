@@ -468,33 +468,59 @@ section {
 
 .experience-header {
   display: flex;
-  justify-content: space-between;
-  align-items: start;
-  margin-bottom: 1rem;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  animation: fadeInDown 0.6s ease-in-out;
 }
 
 .experience-box h3 {
   color: #0056b3;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 700;
   margin: 0;
-  max-width: 220px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.4rem;
+}
+
+.experience-box h3::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #0056b3;
+  margin: 6px auto 0;
+  border-radius: 2px;
 }
 
 .experience-date {
-  font-size: 0.95rem;
-  color: #666;
-  white-space: nowrap;
+  font-size: 0.9rem;
+  background-color: #e0e7ff;
+  color: #1a237e;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-top: 8px;
+  text-align: center;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
-.experience-box p {
-  color: #444;
-  font-size: 1.05rem;
-  line-height: 1.7;
+.experience-box:hover .experience-date {
+  background-color: #c7d2fe;
+  transform: scale(1.05);
 }
 
-.experience-box strong {
-  color: #000;
+/* Animasyon */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* === Responsive Layout Fixes for Footer === */
