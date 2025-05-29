@@ -524,7 +524,22 @@ section {
     transform: translateY(0);
   }
 }
+@media (max-width: 768px) {
+  .experience-box {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.25rem;
+  }
 
+  .experience-items {
+    padding: 0;
+    gap: 1.5rem;
+  }
+
+  .experience-section {
+    padding: 3rem 1rem;
+  }
+}
 
 /* === Responsive Layout Fixes for Footer === */
 
