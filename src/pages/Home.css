@@ -429,15 +429,14 @@ section {
     font-size: 0.8rem;
   }
 }
-
 .experience-section {
   background: #f0f4f9;
-  padding: 5rem 2rem;
+  padding: 5rem 1rem;
   text-align: center;
 }
 
 .experience-section h2 {
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   color: #1a1a40;
   margin-bottom: 2.8rem;
   font-weight: 800;
@@ -447,14 +446,17 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 2rem;
+  padding: 0 1rem;
 }
 
 .experience-box {
   background: #ffffff;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 18px;
-  width: 340px;
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
   text-align: left;
   box-shadow: 0 10px 32px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
@@ -463,7 +465,7 @@ section {
 
 .experience-box:hover {
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1);
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .experience-header {
@@ -498,7 +500,7 @@ section {
   font-size: 0.9rem;
   background-color: #e0e7ff;
   color: #1a237e;
-  padding: 4px 10px;
+  padding: 4px 12px;
   border-radius: 20px;
   margin-top: 8px;
   text-align: center;
@@ -511,7 +513,7 @@ section {
   transform: scale(1.05);
 }
 
-/* Animasyon */
+/* Fade-in animasyonu */
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -522,6 +524,7 @@ section {
     transform: translateY(0);
   }
 }
+
 
 /* === Responsive Layout Fixes for Footer === */
 
