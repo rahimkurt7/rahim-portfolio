@@ -1,3 +1,4 @@
+/* Projects.css */
 .projects-container {
   padding: 4rem 2rem;
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
@@ -97,19 +98,12 @@
 }
 
 .modal-gallery img {
-  width: 320px;
-  max-width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-  transition: transform 0.3s ease;
-  
   max-height: 50vh;
   width: auto;
   object-fit: contain;
   border-radius: 10px;
-
-
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
 }
 
 .nav-button {
@@ -166,6 +160,7 @@
     display: none;
   }
 }
+
 .fullscreen-overlay {
   position: fixed;
   inset: 0;
