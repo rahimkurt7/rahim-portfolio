@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import './Home.css';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from "react-helmet";
 
 function Home() {
   const { t } = useTranslation();
@@ -36,6 +37,12 @@ function Home() {
   ];
 
   return (
+      <>
+    <Helmet>
+      <title>Rahim Kurt | Yazılım Geliştirici</title>
+      <meta name="description" content="Rahim Kurt'un kişisel portföy sitesi. Mobil ve web teknolojileriyle geliştirilen projeleri inceleyin." />
+    </Helmet>
+    
     <div className="home-container">
       <motion.section className="intro-section" initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
         <div className="intro-left">
@@ -120,7 +127,8 @@ function Home() {
         <div className="footer-copy">© 2025 {t('footer.copy')}</div>
       </footer>
     </div>
-  );
+  </> );
+ 
 }
 
 export default Home;

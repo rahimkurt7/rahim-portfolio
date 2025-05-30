@@ -23,7 +23,7 @@ function About() {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.4 }}
       >
-        {[...Array(9)].map((_, i) => (
+        {[...Array(5)].map((_, i) => (
           <p key={i}>{t(`about.paragraph${i + 1}`)}</p>
         ))}
       </motion.div>
