@@ -156,25 +156,28 @@ function Projects() {
       setTouchStartX(null);
     }
   };
-  useEffect(() => {
+useEffect(() => {
   const handlePopState = () => {
+    if (fullscreenImg !== null) {
+      setFullscreenImg(null); // önce fullscreen kapansın
+      return;
+    }
     if (selected !== null) {
-      setSelected(null);
-      navigate('.', { replace: true }); // sadece modal'ı kapat
+      setSelected(null); // sonra modal kapansın
+      return;
     }
   };
 
   window.addEventListener('popstate', handlePopState);
 
-  // Eğer modal açıldıysa history'ye sahte bir kayıt ekle
-  if (selected !== null) {
+  if (fullscreenImg !== null || selected !== null) {
     window.history.pushState(null, '', window.location.href);
   }
 
   return () => {
     window.removeEventListener('popstate', handlePopState);
   };
-}, [selected, navigate]);
+}, [selected, fullscreenImg]);
   return (
     <div className="projects-container">
       <h2 className="projects-title">Projelerim</h2>
