@@ -129,6 +129,7 @@ function Projects() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [fullscreenImg, setFullscreenImg] = useState(null);
   const [touchStartX, setTouchStartX] = useState(null);
+  const [fullscreenTouchStartX, setFullscreenTouchStartX] = useState(null);
   const navigate = useNavigate();
 
   const handleNext = () => {
@@ -156,28 +157,50 @@ function Projects() {
       setTouchStartX(null);
     }
   };
-useEffect(() => {
-  const handlePopState = () => {
-    if (fullscreenImg !== null) {
-      setFullscreenImg(null); // önce fullscreen kapansın
-      return;
-    }
-    if (selected !== null) {
-      setSelected(null); // sonra modal kapansın
-      return;
+
+  const handleFullscreenTouchStart = (e) => {
+    setFullscreenTouchStartX(e.touches[0].clientX);
+  };
+
+  const handleFullscreenTouchMove = (e) => {
+    if (!fullscreenTouchStartX || !selected) return;
+    const touchEndX = e.touches[0].clientX;
+    const diffX = fullscreenTouchStartX - touchEndX;
+
+    if (diffX > 50) {
+      setActiveIndex((prev) => (prev + 1) % selected.images.length);
+      setFullscreenImg(selected.images[(activeIndex + 1) % selected.images.length]);
+      setFullscreenTouchStartX(null);
+    } else if (diffX < -50) {
+      setActiveIndex((prev) => (prev - 1 + selected.images.length) % selected.images.length);
+      setFullscreenImg(selected.images[(activeIndex - 1 + selected.images.length) % selected.images.length]);
+      setFullscreenTouchStartX(null);
     }
   };
 
-  window.addEventListener('popstate', handlePopState);
+  useEffect(() => {
+    const handlePopState = () => {
+      if (fullscreenImg !== null) {
+        setFullscreenImg(null);
+        return;
+      }
+      if (selected !== null) {
+        setSelected(null);
+        return;
+      }
+    };
 
-  if (fullscreenImg !== null || selected !== null) {
-    window.history.pushState(null, '', window.location.href);
-  }
+    window.addEventListener('popstate', handlePopState);
 
-  return () => {
-    window.removeEventListener('popstate', handlePopState);
-  };
-}, [selected, fullscreenImg]);
+    if (fullscreenImg !== null || selected !== null) {
+      window.history.pushState(null, '', window.location.href);
+    }
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, [selected, fullscreenImg]);
+
   return (
     <div className="projects-container">
       <h2 className="projects-title">Projelerim</h2>
@@ -206,7 +229,7 @@ useEffect(() => {
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
           >
-            <button className="close-button" onClick={() => setSelected(null)}>\u2715</button>
+            <button className="close-button" onClick={() => setSelected(null)}>✕</button>
             <h3>{selected.title}</h3>
             <ul>
               {selected.details.map((line, i) => <li key={i}>{line}</li>)}
@@ -214,20 +237,20 @@ useEffect(() => {
             {selected.link && (
               <p style={{ marginTop: '1rem' }}>
                 <a href={selected.link} target="_blank" rel="noopener noreferrer" style={{ color: '#00e6e6', textDecoration: 'underline' }}>
-                  Proje GitHub Sayfas\u0131 \u2197
+                  Proje GitHub Sayfası ↗
                 </a>
               </p>
             )}
             {selected.images.length > 0 && (
               <div className="modal-gallery">
-                <button className="nav-button left" onClick={handlePrev}>\u2BD8</button>
+                <button className="nav-button left" onClick={handlePrev}>⯘</button>
                 <img 
                   src={selected.images[activeIndex]} 
                   alt={`project-${activeIndex}`} 
                   onClick={() => setFullscreenImg(selected.images[activeIndex])} 
                   style={{ cursor: 'zoom-in' }} 
                 />
-                <button className="nav-button right" onClick={handleNext}>\u2BD9</button>
+                <button className="nav-button right" onClick={handleNext}>⯙</button>
               </div>
             )}
           </div>
@@ -235,9 +258,14 @@ useEffect(() => {
       )}
 
       {fullscreenImg && (
-        <div className="fullscreen-overlay" onClick={() => setFullscreenImg(null)}>
+        <div 
+          className="fullscreen-overlay" 
+          onClick={() => setFullscreenImg(null)}
+          onTouchStart={handleFullscreenTouchStart}
+          onTouchMove={handleFullscreenTouchMove}
+        >
           <div className="fullscreen-content" onClick={(e) => e.stopPropagation()}>
-            <button className="close-button" onClick={() => setFullscreenImg(null)}>\u2715</button>
+            <button className="close-button" onClick={() => setFullscreenImg(null)}>✕</button>
             <img src={fullscreenImg} alt="fullscreen" />
           </div>
         </div>
