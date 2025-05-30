@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import './Projects.css';
 
@@ -153,7 +153,27 @@ function Projects() {
       setTouchStartX(null);
     }
   };
+  useEffect(() => {
+    if (selected !== null) {
+      // Geri tuşu için sahte bir history kaydı ekle
+      window.history.pushState({ modalOpen: true }, '');
+    }
 
+    const handlePopState = (event) => {
+      if (selected !== null) {
+        setSelected(null);
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+      if (selected !== null) {
+        window.history.back();
+      }
+    };
+  }, [selected]);
   return (
     <div className="projects-container">
       <h2 className="projects-title">Projelerim</h2>
