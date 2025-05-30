@@ -7,30 +7,31 @@
   color: white;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   font-family: 'Segoe UI', sans-serif;
-  flex-wrap: wrap;
 }
 
 .logo {
   font-weight: bold;
   font-size: 1.5rem;
   color: white;
+  flex-shrink: 0;
 }
 
 .menu-icon {
   display: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
   cursor: pointer;
   color: white;
+  margin-left: auto;
 }
 
-.navbar-top {
-  width: 100%;
+/* Menü içeriği */
+.nav-items {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 }
 
 .navbar-center,
@@ -38,9 +39,9 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  flex-wrap: wrap;
 }
 
+/* Linkler */
 .nav-link {
   color: white;
   text-decoration: none;
@@ -53,35 +54,32 @@
   color: #00e6e6;
 }
 
-/* 🎯 Butonlar */
-.cv-button {
-  background-color: #0d9488;
-  color: white;
+/* Butonlar */
+.cv-button,
+.offer-button {
   padding: 7px 14px;
   border-radius: 8px;
   font-weight: 500;
   text-decoration: none;
   transition: background 0.3s ease;
+  color: white;
 }
 
+.cv-button {
+  background-color: #0d9488;
+}
 .cv-button:hover {
   background-color: #115e59;
 }
 
 .offer-button {
   background-color: #9333ea;
-  color: white;
-  padding: 7px 14px;
-  border-radius: 8px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: background 0.3s ease;
 }
-
 .offer-button:hover {
   background-color: #6b21a8;
 }
 
+/* İkonlar */
 .icon-link {
   font-size: 1.3rem;
   color: white;
@@ -91,17 +89,16 @@
 .icon-link:hover {
   transform: scale(1.2);
 }
-
 .linkedin:hover { color: #0077b5; }
 .github:hover { color: #e5e7eb; }
 .bionluk:hover { color: #f47c20; }
 
+/* Dil seçimi */
 .lang-switch {
   display: flex;
   gap: 0.5rem;
   margin-left: 1rem;
 }
-
 .lang-switch button {
   background: transparent;
   border: none;
@@ -110,28 +107,30 @@
   color: white;
   transition: transform 0.2s ease;
 }
-
 .lang-switch button:hover {
   transform: scale(1.2);
 }
 
-/* Mobil uyum */
+/* Mobil görünüm */
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
   }
 
-  .navbar-center,
-  .navbar-right {
+  .nav-items {
     display: none;
     flex-direction: column;
     width: 100%;
     background-color: #0f172a;
-    padding: 10px 0;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 1.5rem 0;
+    border-radius: 0 0 12px 12px;
+    text-align: center;
   }
 
-  .navbar-center.show,
-  .navbar-right.show {
+  .nav-items.show {
     display: flex;
   }
 
@@ -140,5 +139,14 @@
   .offer-button,
   .icon-link {
     margin: 0.5rem 0;
+  }
+
+  .lang-switch {
+    justify-content: center;
+    margin: 1rem 0 0 0;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
   }
 }
