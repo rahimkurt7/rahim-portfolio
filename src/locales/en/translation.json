@@ -1,0 +1,175 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "download_cv": "📄 Download CV",
+    "offer": "📩 Offer a Job"
+  },
+  "intro": {
+    "greeting": "Hello, I'm",
+    "name": "RAHIM KURT",
+    "description": "I am a Computer Engineering graduate from İzmir Bakırçay University. I actively work not only on mobile solutions but also in areas such as artificial intelligence, database management, and web technologies. I develop cross-platform mobile applications using React and Flutter; I build API services and microservice architectures with modern infrastructures like .NET and Node.js. I produce solutions for data modeling, authentication, and real-time data management with systems like Firebase and PostgreSQL. I am also interested in artificial intelligence and data science, conducting analyses in Python using libraries like Pandas, NumPy, and scikit-learn. I aim to build technically solid products that prioritize user experience and sustainability."
+  },
+  "experience": {
+    "title": "My Experience",
+    "uni": {
+      "title": "İzmir Bakırçay University",
+      "date": "June 2023 – July 2023",
+      "content": "As part of the university’s short-term summer internship, I worked on a TÜBİTAK-supported Mobile Route and Step Counter Application. In this React Native project, I developed modules such as pedometer, map-based route tracking, user analytics, and Firebase synchronization. The project is officially approved by the Ministry of Youth and Sports."
+    },
+    "bilgiyon": {
+      "title": "BilgiYön Software",
+      "date": "February 2024 – May 2025",
+      "content": "I completed my long-term internship at this company. I actively contributed to all modules of a feedback and team management tool called Retro Tool. Using React (frontend), .NET Core (backend), and MSSQL (database), I developed features like post-it note management, chart drawing, polling module, and PDF/Excel export. I also contributed to task tracking via Jira and version control processes using Git."
+    },
+    "freelance": {
+      "title": "Bionluk & Fiverr",
+      "date": "2022 – Present",
+      "content": "As a freelancer, I developed various mobile and web projects. I delivered individual and corporate solutions using technologies like Flutter, React Native, Firebase, and WordPress. By working with international clients on Fiverr, I gained professional experience in project delivery, communication, and customer satisfaction. I mostly completed requests for mobile app development, chatbot setup, and Firebase backend configuration."
+    }
+  },
+  "journey": {
+    "title": "My Development Journey",
+    "subtitle": "I develop sustainable solutions by combining my experiences from different projects.",
+    "card1": {
+      "title": "Experience with Real Projects",
+      "text": "I actively used programming languages such as C#, SQL, Python, and JavaScript in real projects. I developed applications that provide solutions to various technological needs, from desktop automation systems to web-based platforms. I have hands-on experience in database management, API integration, user interface design, and data analysis."
+    },
+    "card2": {
+      "title": "Mastery in Development Processes",
+      "text": "I am proficient in all phases of the software development lifecycle, from analysis to deployment. I manage my projects by following the core steps of the software lifecycle: requirement analysis, system design, coding, testing, deployment, and maintenance. I handle task and sprint management with tools like Jira and coordinate team workflows efficiently using Git."
+    },
+    "card3": {
+      "title": "Touching the Mobile World",
+      "text": "I develop performant and user-friendly mobile applications for both Android and iOS platforms using React Native and Flutter. With modern infrastructures like Expo and Firebase, I implement features such as authentication, real-time data management, and notifications. I gained experience in both individual and team-based projects by developing health-oriented apps like step counters and route trackers approved by the Ministry of Youth and Sports, as well as daily-use solutions like a KYK meal menu app."
+    },
+    "button": {
+      "show": "Show More",
+      "hide": "Show Less"
+    }
+  },
+  "career": {
+    "title": "My Career Goals",
+    "text": "I approach software development not only as an engineering practice but also as a creative art that facilitates human life. Writing code is a tool for me; my main goal is to develop functional, user-friendly, and sustainable products. In the early years of my career, I aim to deepen my knowledge in mobile and web technologies, analyze user needs accurately, produce rapid prototypes, and adopt feedback-driven iterative development. I actively take full responsibility in product development processes by using modern technologies such as React, Flutter, and Firebase. In the midterm, I aim to move into areas like technical leadership, software architecture, and product management—playing an active role in team leadership, project planning, and technological decision-making. By adhering to Agile principles, I prioritize team coordination and customer-oriented solution generation. In the long term, I aspire to work in leadership positions at vision-driven companies, produce innovative and scalable software solutions, and contribute to the industry's growth by mentoring young developers."
+  },
+  "skills": {
+    "title": "Technologies"
+  },
+  "footer": {
+    "contact": "rahimkurt.7@gmail.com — Rahim Kurt",
+    "copy": "© 2025 All Rights Reserved"
+  },
+  "about": {
+  "title": "About Me",
+  "paragraph1": "👋I am Rahim Kurt, a software developer who graduated from the Computer Engineering Department of İzmir Bakırçay University. Throughout my university years, I had the opportunity to strengthen the theoretical foundation I acquired by working on numerous projects. My journey in software development spans a wide range—from mobile applications and web projects to desktop automation systems and game development. I focus on producing innovative, sustainable solutions with a strong emphasis on user experience.",
+  "paragraph2": "🎓 In my career, I have specialized in mobile technologies and modern web frameworks, developing user-friendly interfaces using React, React Native, and Flutter. On the backend, I build API services with powerful infrastructures like .NET Core and Node.js, while managing data synchronization through databases such as Firestore, MSSQL, and PostgreSQL. I place great importance on version control, performance optimization, accessibility, and real-time data flow within software projects.",
+  "paragraph3": "💻As part of my professional development, I had the opportunity to demonstrate my technical skills in a real team environment through a 15-week Vocational Training in Business (IME) program, where I contributed to the Retro Tool project. During this process, I developed components such as login systems, polling modules, post-it boards, and data visualization charts from scratch. I also implemented advanced features like Microsoft Teams integration, PDF/Excel export, and dynamic filtering infrastructures. I worked within an Agile methodology, actively participated in sprint and grooming meetings, and took full responsibility throughout the software development lifecycle",
+  "paragraph4": "📱Some of the notable projects I have developed so far include:KYK Meal Menu Mobile App: Built with Flutter and Firebase, this app allows users to access KYK meal information based on city and date selections. Features include dark mode, notification systems, a settings page, and a user-friendly interface. The app is ready for Play Store deployment.Retro Tool: Designed to facilitate internal team retrospectives, this platform includes modules for post-it cards, sprint tracking, chart-based feedback filtering, polling, and user management. It is developed with React and .NET Core and is suitable for real-world use in teams.ŞikayetVar Web Project: Developed using HTML, CSS, JavaScript, and Bootstrap, this platform allows users to post complaints and companies to respond, simulating a real-world customer service portal.Unity Games & Arduino Projects: I’ve worked on simple 2D games such as Pong and created hardware-based software projects using Arduino, showcasing my interest in both game development and embedded systems.",
+  "paragraph5": "🌐Throughout my career, I have not only enhanced my technical skills but also developed critical soft skills such as teamwork, project management, and solution-oriented thinking. I am open to communication, eager to learn, and quick to adapt to technological changes. I have participated in several training programs, competitions, and internships. My certified training includes topics such as React Native, Web Development, Data Science, and Machine Learning.In the short term, my goal is to actively contribute to projects that integrate mobile and web technologies, further enhancing my technical proficiency while making a significant impact in the industry. In the long term, I aim to focus on artificial intelligence and big data applications to produce solutions with broader influence.I make a consistent effort to stay updated in the field of software development and apply what I learn through real projects. With my problem-solving skills, analytical mindset, and user-focused design approach, I aim to make a meaningful difference in every project I take part in."
+},
+"projects": {
+    "title": "My Projects",
+    "Retro Tool": {
+      "short": "In-team feedback management tool",
+      "details": [
+        "A comprehensive app designed for team retrospective meetings.",
+        "Users can create post-it notes, group them by category, and share with teammates.",
+        "Each category (Mad, Sad, Glad, Learned, Suggestion) is shown in its own panel, and emojis can be assigned.",
+        "Users can analyze sprint data on the chart page and view custom graphs with filters.",
+        "Export feature allows downloading data as PDF or Excel.",
+        "Admin privileges and MS Teams meeting links can be managed via developer module.",
+        "Built using React (frontend), .NET Core (backend), and MSSQL (database).",
+        "Offers secure authentication with JWT and a dynamic UI/UX experience."
+      ]
+    },
+    "KYK Yemek Menüsü": {
+      "short": "An app displaying KYK meals across 81 cities",
+      "details": [
+        "A Flutter mobile app allowing users to view daily breakfast and dinner menus from Firebase Firestore based on selected city. Offers flexible filters like time and date.",
+        "UI built with Material Design, data fetched dynamically, and notifications handled using Flutter Local Notifications & Android AlarmManager. User preferences are stored via SharedPreferences."
+      ]
+    },
+    "VR Yangın Simülasyonu": {
+      "short": "VR-based fire training simulation",
+      "details": [
+        "Developed using Unity and C#, this VR project allows users to practice fire extinguishing.",
+        "Aimed for in-company training to enhance emergency response skills.",
+        "TÜBİTAK-supported, providing innovative safety training."
+      ]
+    },
+    "ŞikayetVar Klonu": {
+      "short": "User-company complaint platform",
+      "details": [
+        "Developed with HTML, CSS, JavaScript, and Bootstrap. Users can submit complaints and companies can respond.",
+        "Simulates interactive complaint management with a simple interface.",
+        "Provides basic experience in customer service handling."
+      ]
+    },
+    "Adım Sayar Uygulaması": {
+      "short": "Mobile step tracking tool",
+      "details": [
+        "Built with React Native and Expo.",
+        "Counts steps using device sensors.",
+        "Tracks daily walking and distance."
+      ]
+    },
+    "Mobil Rota Uygulaması": {
+      "short": "Location-based route tracker for athletes",
+      "details": [
+        "Developed with React Native, compatible with Android and iOS.",
+        "Tracks real-time location, steps, and maps walking routes.",
+        "Firebase ensures cloud sync across devices."
+      ]
+    },
+    "Banka Otomasyonu": {
+      "short": "Bank customer and account system",
+      "details": [
+        "Built with C# and SQL Server.",
+        "Includes customer registration, transfers, balance tracking.",
+        "Simulates basic banking operations in a simple UI."
+      ]
+    },
+    "Hastane Otomasyonu": {
+      "short": "Hospital patient and doctor management",
+      "details": [
+        "Built using C# and Npgsql for PostgreSQL.",
+        "Manages patient records, appointments, and doctor info.",
+        "Digitizes internal hospital processes."
+      ]
+    },
+    "Öğrenci Ders Otomasyonu": {
+      "short": "Student course and grades system",
+      "details": [
+        "Built with C# and PostgreSQL using Npgsql.",
+        "Includes modules for student adding, course assigning, and grades.",
+        "Functional example of a basic student info system."
+      ]
+    },
+    "Arduino ile Pong Game": {
+      "short": "Hardware Pong game with Arduino",
+      "details": [
+        "Classic Pong game implemented using Arduino.",
+        "LED matrix shows paddle and ball animation.",
+        "Hands-on example for hardware-based gaming."
+      ]
+    }
+  },
+  "contact": {
+  "title": "Contact Me",
+  "subtitle": "Feel free to reach out with questions, suggestions, or project ideas.",
+  "namePlaceholder": "Full Name",
+  "emailPlaceholder": "Email",
+  "messagePlaceholder": "Your Message",
+  "submitButton": "Send",
+  "thankYou": "Thank you! Your message has been successfully sent. 🎉"
+  },
+  "footer": {
+  "email": "rahimkurt.7@gmail.com — Rahim Kurt",
+  "copyright": "© 2025 All Rights Reserved"
+}
+
+
+
+}

@@ -1,109 +1,24 @@
-/* Temel navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 2.5rem; /* bir tık daha kalın */
-  background-color: #084c53; /* istediğin renge çok yakın */
+  padding: 1.2rem 2rem;
+  background: linear-gradient(90deg, #003941, #084c53);
   color: white;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   font-family: 'Segoe UI', sans-serif;
   flex-wrap: wrap;
 }
 
 .logo {
   font-weight: bold;
-  font-size: 1.4rem;
-}
-
-/* Toggle (hamburger) */
-.navbar-toggle {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
+  font-size: 1.5rem;
   color: white;
 }
 
-/* Ortadaki linkler */
-.navbar-center,
-.navbar-right {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.nav-link {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.cv-button, .offer-button {
-  padding: 6px 12px;
-  border-radius: 6px;
-  background-color: #1e293b;
-  color: white;
-  font-size: 0.9rem;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.cv-button:hover,
-.offer-button:hover {
-  background-color: #334155;
-}
-
-/* Sosyal ikonlar */
-.icon-link {
-  font-size: 1.2rem;
-  color: white;
-  transition: transform 0.3s;
-}
-
-.icon-link:hover {
-  transform: scale(1.2);
-}
-
-.linkedin:hover {
-  color: #0077b5;
-}
-.github:hover {
-  color: #333;
-}
-.bionluk:hover {
-  color: #f47c20;
-}
-
-/* 🎯 Mobil Uyum */
-@media (max-width: 768px) {
-  .navbar-toggle {
-    display: block;
-  }
-
-  .navbar-center,
-  .navbar-right {
-    flex-direction: column;
-    width: 100%;
-    display: none;
-    background-color: #0f172a;
-    padding: 10px 0;
-  }
-
-  .navbar-center.open,
-  .navbar-right.open {
-    display: flex;
-  }
-
-  .nav-link,
-  .cv-button,
-  .offer-button,
-  .icon-link {
-    margin: 8px 0;
-  }
-}
 .menu-icon {
   display: none;
   font-size: 1.8rem;
@@ -111,17 +26,99 @@
   color: white;
 }
 
-/* Mobil görünüm */
+.navbar-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-center,
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+  color: #00e6e6;
+}
+
+/* 🎯 Butonlar */
+.cv-button {
+  background-color: #0d9488;
+  color: white;
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cv-button:hover {
+  background-color: #115e59;
+}
+
+.offer-button {
+  background-color: #9333ea;
+  color: white;
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.offer-button:hover {
+  background-color: #6b21a8;
+}
+
+.icon-link {
+  font-size: 1.3rem;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.icon-link:hover {
+  transform: scale(1.2);
+}
+
+.linkedin:hover { color: #0077b5; }
+.github:hover { color: #e5e7eb; }
+.bionluk:hover { color: #f47c20; }
+
+.lang-switch {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+.lang-switch button {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+.lang-switch button:hover {
+  transform: scale(1.2);
+}
+
+/* Mobil uyum */
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
-  }
-
-  .navbar-top {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   .navbar-center,
@@ -129,7 +126,8 @@
     display: none;
     flex-direction: column;
     width: 100%;
-    margin-top: 1rem;
+    background-color: #0f172a;
+    padding: 10px 0;
   }
 
   .navbar-center.show,

@@ -1,0 +1,179 @@
+{
+  "navbar": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "projects": "Projeler",
+    "contact": "İletişim",
+    "download_cv": "📄 CV İndir",
+    "offer": "📩 İş Teklifi Yap"
+  },
+  "intro": {
+    "greeting": "Merhaba, ben",
+    "name": "RAHİM KURT",
+    "description": "İzmir Bakırçay Üniversitesi Bilgisayar Mühendisliği mezunuyum. Yazılım geliştirme süreçlerinde sadece mobil çözümlerle değil, aynı zamanda yapay zeka, veritabanı yönetimi ve web teknolojileri alanlarında da etkin şekilde çalışıyorum. React ve Flutter ile çapraz platform mobil uygulamalar geliştiriyor; .NET ve Node.js gibi modern altyapılarla API servisleri ve mikroservis mimarileri oluşturuyorum. Firebase ve PostgreSQL gibi sistemlerle veri modelleme, kimlik doğrulama ve gerçek zamanlı veri yönetimi üzerine çözümler üretiyorum. Aynı zamanda yapay zeka ve veri bilimi alanına ilgi duyuyor, Python ile makine öğrenmesi projelerinde Pandas, NumPy ve scikit-learn gibi kütüphaneler kullanarak analizler gerçekleştiriyorum. Kullanıcı deneyimini ve sürdürülebilirliği esas alan, teknik olarak sağlam ürünler üretmeyi hedefliyorum."
+  },
+  "experience": {
+    "title": "Deneyim ve Tecrübelerim",
+    "uni": {
+      "title": "İzmir Bakırçay Üniversitesi",
+      "date": "Haziran 2023 – Temmuz 2023",
+      "content": "Üniversitemizin yürüttüğü kısa dönem yaz stajı kapsamında TÜBİTAK destekli Mobil Rota ve Adım Sayar Uygulaması üzerinde çalıştım. React Native ile geliştirilen bu projede adım sayacı, harita tabanlı rota izleme, kullanıcı analizi ve Firebase senkronizasyon gibi modülleri üstlendim. Proje Gençlik ve Spor Bakanlığı onaylıdır ve resmî olarak kullanıma sunulmuştur."
+    },
+    "bilgiyon": {
+      "title": "BilgiYön Yazılım",
+      "date": "Şubat 2024 – Mayıs 2025",
+      "content": "Uzun dönem stajımı bu şirkette gerçekleştirdim. Ekip içinde Retro Tool adlı geri bildirim ve takım yönetim uygulamasının tüm modüllerinde aktif rol aldım. React (frontend), .NET Core (backend), MSSQL (veritabanı) kullanarak post-it kart yönetimi, grafik çizimi, anket modülü ve PDF/Excel dışa aktarma gibi özellikleri geliştirdim. Jira ile görev takibi ve Git ile sürüm kontrolü süreçlerine aktif olarak katkı sağladım."
+    },
+    "freelance": {
+      "title": "Bionluk & Fiverr",
+      "date": "2022 – Hâlen",
+      "content": "Freelancer olarak çeşitli mobil ve web projeleri geliştirdim. Flutter, React Native, Firebase ve WordPress teknolojileriyle bireysel ve kurumsal çözümler sundum. Fiverr üzerinden yurt dışı müşterilerle çalışarak, proje teslimi, iletişim ve müşteri memnuniyeti alanında profesyonel deneyim kazandım. Genellikle mobil uygulama geliştirme, chatbot kurulumları, Firebase ile backend yapılandırma gibi talepleri tamamladım."
+    }
+  },
+  "journey": {
+    "title": "Gelişim Yolculuğum",
+    "subtitle": "Farklı projelerde edindiğim deneyimleri birleştirerek, sürdürülebilir çözümler geliştiriyorum.",
+    "card1": {
+      "title": "Gerçek Projelerle Deneyim",
+      "text": "C#, SQL, Python ve JavaScript dillerini gerçek projelerde aktif olarak kullandım. Masaüstü otomasyon sistemlerinden web tabanlı platformlara kadar farklı teknolojik ihtiyaçlara çözüm üreten uygulamalar geliştirdim. Veritabanı yönetimi, API entegrasyonu, kullanıcı arayüzü tasarımı ve veri analizi konularında uygulamalı deneyim sahibiyim."
+    },
+    "card2": {
+      "title": "Yazılım Süreçlerinde Ustalık",
+      "text": "Yazılım geliştirme sürecinde analizden dağıtıma kadar olan tüm aşamalara hâkimim. Projelerimi genellikle yazılım yaşam döngüsünün temel basamakları olan ihtiyaç analizi, sistem tasarımı, kodlama, test, dağıtım ve bakım adımlarına uygun şekilde yürütüyorum. Jira gibi araçlarla görev ve sprint yönetimini sağlarken; Git ile versiyon kontrolünü etkin biçimde kullanarak takım içi iş akışlarını koordine ediyorum."
+    },
+    "card3": {
+      "title": "Mobil Dünyaya Dokunuş",
+      "text": "React Native ve Flutter teknolojileriyle hem Android hem iOS platformları için performanslı ve kullanıcı dostu mobil uygulamalar geliştiriyorum. Expo ve Firebase gibi modern altyapılarla uygulamalara kimlik doğrulama, gerçek zamanlı veri yönetimi ve bildirim gibi işlevler kazandırıyorum. GSB onaylı rota takip sistemi, adım sayar gibi sağlık temelli projeler ve KYK yemek menüsü uygulaması gibi günlük hayatı kolaylaştıran çözümler geliştirerek hem bireysel hem ekip bazlı deneyim kazandım."
+    },
+    "button": {
+      "show": "Devamını Gör",
+      "hide": "Daha Az Göster"
+    }
+  },
+  "career": {
+    "title": "Kariyer Hedeflerim",
+    "text": "Yazılım geliştirme sürecine yalnızca bir mühendislik pratiği olarak değil, aynı zamanda insan hayatını kolaylaştıran yaratıcı bir sanat olarak yaklaşıyorum. Kod yazmak benim için bir araç; asıl hedefim ise işlevsel, kullanıcı dostu ve sürdürülebilir ürünler geliştirmek. Kariyerimin ilk yıllarında mobil ve web teknolojilerinde derinleşerek kullanıcı ihtiyaçlarını doğru analiz etmeyi, hızlı prototipler üretmeyi ve geri bildirim odaklı iteratif geliştirme yapmayı öğreniyorum. Özellikle React, Flutter ve Firebase gibi modern teknolojileri aktif olarak kullanarak ürün geliştirme süreçlerinde uçtan uca sorumluluk almayı deneyimliyorum. Orta vadede teknik liderlik, yazılım mimarisi ve ürün yönetimi gibi alanlara yönelerek ekip yönetimi, proje planlama ve teknolojik karar süreçlerinde etkin rol oynamayı hedefliyorum. Agile prensiplerine bağlı kalarak hem takım içi koordinasyonu hem de müşteri odaklı çözüm üretmeyi öncelik ediniyorum. Uzun vadede ise teknoloji vizyonu olan şirketlerde lider pozisyonlarda yer alarak, inovatif ve ölçeklenebilir yazılım çözümleri üretmek; genç geliştiricilere mentorluk yaparak sektörün gelişimine katkı sunmak istiyorum."
+  },
+  "skills": {
+    "title": "Teknolojiler"
+  },
+  "footer": {
+    "contact": "rahimkurt.7@gmail.com — Rahim Kurt",
+    "copy": "© 2025 Tüm Hakları Saklıdır"
+  },
+  "about": {
+  "title": "Hakkımda",
+  "paragraph1": "👋 Ben Rahim Kurt, İzmir Bakırçay Üniversitesi Bilgisayar Mühendisliği bölümünden mezun bir yazılım geliştiricisiyim. Üniversite hayatım boyunca edindiğim teorik altyapıyı, çok sayıda projeyle pekiştirerek pratiğe dökme fırsatı buldum. Yazılım geliştirme serüvenim; mobil uygulamalardan web projelerine, masaüstü otomasyon sistemlerinden oyun geliştirmeye kadar geniş bir yelpazeye yayılmaktadır. Geliştirme süreçlerinde kullanıcı deneyimini merkeze alan, sürdürülebilir ve yenilikçi çözümler üretmeye odaklanırım.",
+  "paragraph2": "🎓 Mobil teknolojiler ve modern web framework’leri üzerine yoğunlaştığım kariyer yolculuğumda; React, React Native, Flutter gibi çapraz platform araçlarıyla kullanıcı dostu arayüzler geliştiriyorum. Backend tarafında ise .NET Core ve Node.js gibi güçlü altyapılarla API servisleri üretiyor, veri senkronizasyonunu Firestore, MSSQL ve PostgreSQL gibi veritabanları üzerinden yönetiyorum. Yazılım projelerinde versiyon kontrolü, performans optimizasyonu, kullanıcı erişilebilirliği ve gerçek zamanlı veri akışı gibi alanlara özel önem veriyorum.",
+  "paragraph3": "💻 Profesyonel gelişim sürecimde, 15 haftalık İşletmede Mesleki Eğitim (İME) kapsamında gerçekleştirdiğim Retro Tool projesi, teknik yeterliliğimi gerçek bir ekip ortamında sergileme şansı sundu. Bu süreçte giriş sistemlerinden anket modüllerine, post-it kartlarından grafik görselleştirmeye kadar birçok bileşeni baştan sona geliştirdim. Ayrıca, Microsoft Teams entegrasyonu, PDF/Excel dışa aktarma sistemleri ve dinamik filtreleme altyapıları gibi detaylı modülleri kodladım. Proje boyunca Agile metodolojisiyle çalıştım, sprint ve grooming toplantılarına aktif olarak katıldım ve yazılım geliştirme yaşam döngüsünün her aşamasında doğrudan sorumluluk üstlendim.",
+  "paragraph4": "🧠 Bugüne dek geliştirdiğim projeler arasında şunlar öne çıkmaktadır:",
+  "paragraph5": "📱 KYK Yemek Menüsü Mobil Uygulaması: Flutter ve Firebase altyapısıyla geliştirilen bu uygulama, kullanıcıların şehir ve tarih seçimine göre KYK yemek bilgilerine erişimini sağlar. Uygulamada karanlık mod, bildirim sistemleri, ayarlar ekranı ve kullanıcı dostu tasarım ön plandadır. Uygulama Play Store’a yüklenmeye hazır durumdadır.Retro Tool: Takım içi geri bildirim yönetimini kolaylaştırmak amacıyla geliştirilmiş bu uygulama; post-it kartları, sprint takibi, grafik filtreleme, anket sistemleri ve kullanıcı yönetimi gibi birçok modülü içermektedir. React ve .NET Core ile geliştirilen bu platform, gerçek projelerde kullanılabilecek profesyonel bir çözümdür.ŞikayetVar Web Projesi: HTML, CSS, JavaScript ve Bootstrap kullanılarak geliştirilen bu proje; kullanıcıların şikayet bildirebildiği, firmaların yanıt verebildiği bir web platformudur.Unity Oyunları ve Arduino Projeleri: Basit 2D oyunlardan Pong gibi klasik oyunlara, Arduino ile geliştirilen fiziksel prototiplere kadar oyun geliştirme ve donanım temelli yazılım çalışmalarım bulunmaktadır.",
+  "paragraph6": "🔄 Kariyer yolculuğumda sadece teknik becerilerle değil, aynı zamanda takım çalışması, proje yönetimi ve çözüm odaklı yaklaşım gibi iş hayatında kritik olan becerilerle de donandım. İletişime açık, öğrenmeye istekli ve değişen teknolojiye hızla uyum sağlayan bir yapıya sahibim. Bugüne kadar birçok farklı platformda eğitim programlarına, yarışmalara ve stajlara katıldım. Sertifikalı eğitimlerim arasında React Native, Web Development, Veri Bilimi ve Makine Öğrenmesi gibi konular yer almaktadır.Kısa vadeli hedefim, mobil ve web teknolojilerini bir araya getiren projelerde aktif rol alarak hem teknik yeterliliğimi daha da geliştirmek hem de sektörde güçlü bir iz bırakmaktır. Uzun vadede ise, yapay zeka ve büyük veri tabanlı uygulamalara yönelerek daha geniş etki alanına sahip çözümler üretmeyi hedeflemekteyim.Kendimi yazılım geliştirme alanında sürekli olarak güncel tutmaya ve öğrendiklerimi gerçek projelerde hayata geçirmeye özen gösteriyorum. Problem çözme kabiliyetim, analitik düşünme becerim ve kullanıcı odaklı tasarım anlayışım sayesinde her projede fark yaratmayı amaçlıyorum.",
+  "paragraph7": "🌐 ŞikayetVar Web Projesi, HTML/CSS/JS ile geliştirilen, kullanıcıların şikayet bırakabildiği ve firmaların yanıt verebildiği bir platformdur.",
+  "paragraph8": "🎮 Unity ile 2D oyunlar ve Arduino ile basit fiziksel prototipler geliştirdim.",
+  "paragraph9": "🎯 Hedefim, yazılımda sürekli gelişmek, kullanıcı odaklı projeler üretmek ve büyük veri & yapay zeka alanlarında uzmanlaşmak."
+},
+"projects": {
+    "title": "Projelerim",
+    "Retro Tool": {
+      "short": "Takım içi geribildirim yönetim aracı",
+      "details": [
+        "Takım içi retrospektif toplantılar için geliştirilen kapsamlı bir uygulamadır.",
+        "Kullanıcılar post-it kartları oluşturabilir, bu kartları kategoriye göre gruplayabilir ve takım üyeleriyle paylaşabilir.",
+        "Her kategori (Mad, Sad, Glad, Learned, Suggestion) kendi panelinde gösterilir ve kartlara emoji atanabilir.",
+        "Kullanıcılar grafik sayfasında sprint verilerini analiz edebilir, kullanıcı/kategori/sprint filtrelemeleriyle özelleştirilmiş grafikler görüntüleyebilir.",
+        "Export özelliği sayesinde bu verileri PDF veya Excel olarak dışa aktarabilir.",
+        "Geliştirici modülü sayesinde admin yetkileri atanabilir, MS Teams entegrasyonu ile toplantı linkleri düzenlenebilir.",
+        "React (frontend), .NET Core (backend) ve MSSQL (veritabanı) teknolojileriyle geliştirildi.",
+        "JWT kimlik doğrulama, yetkili kullanıcı kontrolü ve dinamik UI/UX ile güçlü bir yazılım deneyimi sunar."
+      ]
+    },
+    "KYK Yemek Menüsü": {
+      "short": "81 il için KYK yemek bilgilerini sunan uygulama",
+      "details": [
+        "Flutter teknolojisiyle geliştirilen bu mobil uygulama, kullanıcıların bulundukları şehre göre Firebase Firestore veritabanından günlük kahvaltı ve akşam yemeği menülerini görüntülemelerine olanak tanır. Şehir seçimi, sabah/akşam seçimi ve tarih filtresi gibi özelliklerle esnek veri erişimi sağlanır.",
+        "Uygulama geliştirme sürecinde Flutter framework’ü kullanılmış, arayüz tasarımları Material Design ilkeleriyle oluşturulmuştur. Veriler Firebase Firestore’dan dinamik olarak çekilmekte, bildirimler için Flutter Local Notifications paketi ve zamanlama için Android AlarmManager kullanılmıştır. Kullanıcı ayarları SharedPreferences üzerinden kalıcı olarak saklanmaktadır."
+      ]
+    },
+    "VR Yangın Simülasyonu": {
+      "short": "VR tabanlı eğitim simülasyonu",
+      "details": [
+        "Unity ve C# kullanılarak geliştirilen bu proje, sanal gerçeklik (VR) gözlükleri aracılığıyla kullanıcıların yangın söndürme pratiği yapabilmesini sağlar. Gerçek zamanlı etkileşim ve sürükleyici deneyim sunar.",
+        "Proje, kurum içi eğitimlerde kullanılmak üzere tasarlanmış olup, yangın anında doğru müdahale becerilerinin kazandırılmasını hedefler.",
+        "TÜBİTAK destekli bu proje, iş sağlığı ve güvenliği alanında yenilikçi bir çözüm sunmayı amaçlamaktadır."
+      ]
+    },
+    "ŞikayetVar Klonu": {
+      "short": "Kullanıcı-şirket iletişim platformu",
+      "details": [
+        "HTML, CSS, JavaScript ve Bootstrap ile geliştirilen bu web tabanlı projede, kullanıcıların şikayet oluşturabilmesi ve firmaların yanıt verebilmesi sağlanmıştır.",
+        "Kullanıcı dostu arayüzüyle şikayet süreci simüle edilmiştir.",
+        "Bu proje, müşteri hizmetleri ve etkileşim konusunda temel bir deneyim sunar."
+      ]
+    },
+    "Adım Sayar Uygulaması": {
+      "short": "Mobil adım takip aracı",
+      "details": [
+        "React Native ve Expo ile geliştirildi.",
+        "Cihaz sensörleriyle adım sayımı yapılır.",
+        "Gün içi yürüyüş takibi ve mesafe analizi sağlar."
+      ]
+    },
+    "Mobil Rota Uygulaması": {
+      "short": "Sporcular için konum tabanlı rota uygulaması",
+      "details": [
+        "React Native ile geliştirildi. Modern UI/UX sunar.",
+        "Gerçek zamanlı konum ve adım takibi yapılır.",
+        "Firebase ile bulut veri senkronizasyonu sağlar."
+      ]
+    },
+    "Banka Otomasyonu": {
+      "short": "Müşteri ve hesap yönetimi sistemi",
+      "details": [
+        "C# ve SQL Server ile geliştirildi.",
+        "Müşteri kaydı, para transferi ve bakiye işlemleri içerir.",
+        "Bankacılık işlemleri sade ve gerçekçi biçimde simüle edilmiştir."
+      ]
+    },
+    "Hastane Otomasyonu": {
+      "short": "Hasta ve doktor yönetim sistemi",
+      "details": [
+        "C# ve Npgsql ile geliştirildi.",
+        "Hasta kaydı, randevu sistemi ve doktor bilgileri yönetimi entegredir.",
+        "Hastane içi süreçlerin dijital takibini sağlar."
+      ]
+    },
+    "Öğrenci Ders Otomasyonu": {
+      "short": "Öğrenci dersi ve not bilgisi yönetimi",
+      "details": [
+        "C# ve Npgsql kullanılarak geliştirildi.",
+        "Öğrenci ekleme, ders atama, not girişi gibi modüller içerir.",
+        "Basit ama işlevsel bir öğrenci bilgi sistemi örneğidir."
+      ]
+    },
+    "Arduino ile Pong Game": {
+      "short": "Arduino ile geliştirilmiş fiziksel oyun",
+      "details": [
+        "Arduino kartı ile klasik Pong oyunu geliştirildi.",
+        "Led matrix üzerinde top ve paddle animasyonu gerçek zamanlı olarak çalışır.",
+        "Donanım tabanlı oyun geliştirme için temel bir örnektir."
+      ]
+    }
+  },
+  "contact": {
+  "title": "İletişime Geç",
+  "subtitle": "Soru, öneri ya da projeler için bana ulaşabilirsin.",
+  "namePlaceholder": "Ad Soyad",
+  "emailPlaceholder": "E-posta",
+  "messagePlaceholder": "Mesajınız",
+  "submitButton": "Gönder",
+  "thankYou": "Teşekkürler! Mesajınız başarıyla gönderildi. 🎉"
+},
+"footer": {
+  "email": "rahimkurt.7@gmail.com — Rahim Kurt",
+  "copyright": "© 2025 Tüm Hakları Saklıdır"
+}
+
+
+
+}

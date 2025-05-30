@@ -1,40 +1,31 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './About.css';
+import { useTranslation } from 'react-i18next';
 
 function About() {
+  const { t } = useTranslation();
+
   return (
     <div className="about-container">
-
-      <motion.h1 
-        className="about-title" 
-        initial={{ y: -20, opacity: 0 }} 
-        animate={{ y: 0, opacity: 1 }} 
-        transition={{ delay: 0.2 }}>
-        Hakkımda
+      <motion.h1
+        className="about-title"
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.2 }}
+      >
+        {t('about.title')}
       </motion.h1>
 
-      <motion.div 
-        className="about-card" 
-        initial={{ scale: 0.95, opacity: 0 }} 
-        animate={{ scale: 1, opacity: 1 }} 
-        transition={{ delay: 0.4 }}>
-
-        <p>
-          <strong>İzmir Bakırçay Üniversitesi</strong> Bilgisayar Mühendisliği mezunuyum. Üniversite hayatım boyunca <span className="highlight">mobil uygulama geliştirme</span>, <span className="highlight">web projeleri</span> ve <span className="highlight">otomasyon sistemleri</span> üzerine çalışmalar yaptım. Teorik bilgilerimi pratiğe dökmeyi her zaman öncelik haline getirdim.
-        </p>
-
-        <p>
-          <span className="emoji">📱</span> <strong>Mobil geliştirme</strong> alanında özellikle <span className="highlight">React Native</span>, <span className="highlight">Expo</span> ve <span className="highlight">Firebase</span> kullanarak çapraz platform projeler ürettim. Takım çalışmalarında aktif görev alarak proje yönetimi, sorumluluk paylaşımı ve zaman planlaması konularında becerilerimi geliştirdim.
-        </p>
-
-        <p>
-          <span className="emoji">🤖</span> <strong>Yapay zekâ ve prompt mühendisliği</strong> alanlarına yoğun ilgi duymaktayım. Üretken yapay zekâ araçlarıyla hızlı çözümler üretebiliyor, büyük projeleri kısa sürede modelleyebiliyorum. Python, JavaScript gibi dillere hâkimim; yeni teknolojilere hızlı adapte olabiliyorum.
-        </p>
-
-        <p>
-          <span className="emoji">💡</span> <strong>Problem çözme, yaratıcılık ve iletişim</strong> konularındaki güçlü yönlerim sayesinde ekip içi uyum sağlar ve her projeye değer katmayı hedeflerim. Yazılım dünyasında sürdürülebilir bir kariyer inşa ederek, yenilikçi ve anlamlı çözümler üretmeyi amaçlıyorum.
-        </p>
+      <motion.div
+        className="about-card"
+        initial={{ scale: 0.95, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ delay: 0.4 }}
+      >
+        {[...Array(9)].map((_, i) => (
+          <p key={i}>{t(`about.paragraph${i + 1}`)}</p>
+        ))}
       </motion.div>
 
       <footer className="footer">
@@ -57,9 +48,8 @@ function About() {
           <a href="mailto:rahimkurt.7@gmail.com">rahimkurt.7@gmail.com</a> — <strong>Rahim Kurt</strong>
         </div>
 
-        <div className="footer-copy">© 2025 Tüm Hakları Saklıdır</div>
+        <div className="footer-copy">© 2025 {t('footer.copy')}</div>
       </footer>
-
     </div>
   );
 }
