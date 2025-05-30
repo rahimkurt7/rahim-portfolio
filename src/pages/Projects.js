@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import './Projects.css';
+import { useNavigate } from 'react-router-dom';
+
 
 const projectList = [
   {
@@ -127,6 +129,7 @@ function Projects() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [fullscreenImg, setFullscreenImg] = useState(null);
   const [touchStartX, setTouchStartX] = useState(null);
+  const navigate = useNavigate();
 
   const handleNext = () => {
     setActiveIndex((prev) => (prev + 1) % selected.images.length);
@@ -154,26 +157,24 @@ function Projects() {
     }
   };
   useEffect(() => {
+  const handlePopState = () => {
     if (selected !== null) {
-      // Geri tuşu için sahte bir history kaydı ekle
-      window.history.pushState({ modalOpen: true }, '');
+      setSelected(null);
+      navigate('.', { replace: true }); // sadece modal'ı kapat
     }
+  };
 
-    const handlePopState = (event) => {
-      if (selected !== null) {
-        setSelected(null);
-      }
-    };
+  window.addEventListener('popstate', handlePopState);
 
-    window.addEventListener('popstate', handlePopState);
+  // Eğer modal açıldıysa history'ye sahte bir kayıt ekle
+  if (selected !== null) {
+    window.history.pushState(null, '', window.location.href);
+  }
 
-    return () => {
-      window.removeEventListener('popstate', handlePopState);
-      if (selected !== null) {
-        window.history.back();
-      }
-    };
-  }, [selected]);
+  return () => {
+    window.removeEventListener('popstate', handlePopState);
+  };
+}, [selected, navigate]);
   return (
     <div className="projects-container">
       <h2 className="projects-title">Projelerim</h2>
